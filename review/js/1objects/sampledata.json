@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "gender": "female",
+            "name": {
+                "title": "Miss",
+                "first": "Janne",
+                "last": "Fløtre"
+            },
+            "location": {
+                "street": {
+                    "number": 8596,
+                    "name": "Lokkeberget"
+                },
+                "city": "Glesnes",
+                "state": "Sogn og Fjordane",
+                "country": "Norway",
+                "postcode": "0875",
+                "coordinates": {
+                    "latitude": "38.7115",
+                    "longitude": "25.4157"
+                },
+                "timezone": {
+                    "offset": "-1:00",
+                    "description": "Azores, Cape Verde Islands"
+                }
+            },
+            "email": "janne.flotre@example.com",
+            "login": {
+                "uuid": "6356d83a-a27a-4671-80bf-91578c83f739",
+                "username": "yellowmeercat163",
+                "password": "pulsar",
+                "salt": "iBMBEeHd",
+                "md5": "17aac14605232328fd9d66503f65b4f5",
+                "sha1": "a77e8fe8cd90b39fdaf7b43ce52c51dd8ca45d7e",
+                "sha256": "390e8d44f1d3db353fa32749d2930324426a0fa00950cecd0daad7847b38348f"
+            },
+            "dob": {
+                "date": "1963-05-11T05:05:22.659Z",
+                "age": 60
+            },
+            "registered": {
+                "date": "2011-02-21T11:21:19.437Z",
+                "age": 12
+            },
+            "phone": "75294252",
+            "cell": "94121754",
+            "id": {
+                "name": "FN",
+                "value": "11056319478"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/52.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/52.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/52.jpg"
+            },
+            "nat": "NO"
+        }
+    ],
+    "info": {
+        "seed": "b38369b2e512cdef",
+        "results": 1,
+        "page": 1,
+        "version": "1.4"
+    }
+}

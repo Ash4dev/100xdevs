@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Access</title>
+    <link rel = "icon" href = "lolcats.jpeg"> </link>
+</head>
+<body> 
+    <div id = "result"> 
+        <button id="lol">
+            Click Me!
+        </button>
+    </div>
+    <script>
+        const requestURL = "https://randomuser.me/api/";
+        
+        // client created
+        const req = new XMLHttpRequest(); 
+
+        const statMp = new Map();
+        statMp.set(0, "UNSENT: client created, but connection not set");
+        statMp.set(1, "OPENED: connection opened by calling .open()");
+        statMp.set(2, "HEADERS_RECEIVED: dataflow started by calling .send()");
+        statMp.set(3, "LOADING: downloading, responseText holds partial data");
+        statMp.set(4, "DONE: operation completed");
+
+        console.log(statMp.get(req.readyState));
+        
+        // open connection
+        req.open("GET", requestURL); 
+        console.log(statMp.get(req.readyState));
+        console.log("CONNECTION SET!")
+
+        // allow dataflow
+        req.send(); 
+        req.onreadystatechange = () => {
+            let state = req.readyState;
+
+            if (state == 4){
+                // check received data type, string -> object
+
+                // this.responseText (alternative)
+                const data = JSON.parse(req.responseText);
+                const info = data.results[0];
+
+                let button = document.getElementById("lol").addEventListener("click", (event) => {
+
+                    // add image
+                    let res = document.getElementById("result");
+                    let img = new Image();
+                    img.src = info.picture.large;
+                    res.appendChild(img);
+
+                    // add name
+                    let name = `${info.name.title} ${info.name.first} ${info.name.last}`
+                    let ptag = document.createElement("p");
+                    ptag.innerHTML = name;
+                    res.append(ptag);
+                }, false);
+            }
+            else{
+                console.log(statMp.get(state));
+            }
+        }
+    </script>
+
+</body>
+</html>

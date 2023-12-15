@@ -1,0 +1,27 @@
+ls -l: all directories with permissions
+ls -R: recursively look at all the folders & files (-r) ?
+ls -t: look at folders based on last used time
+ls -la: look at all files
+wildcards: https://www.grepper.com/answers/366630/wildcards+linux?ucard=1
+mkdir newfolder: Creates new folder in current directory
+mkdir -p newfolder/subfolder: Creates folder with nested subfolders
+mv oriname.ext fold/newname.ext: rename file (contents remain)
+cp -r foldpath: recursively move individual files in folder (no need of -r if copying single file)
+&&: logical operators can be used to combine commands
+rm -r: recursively remove all files and subfolder (rmdir: dir must be empty)
+
+chmod User/Grp/Others +(add)/-(delete) Read/Write/Xecute file/folder(-R): change file permissions (https://www.grepper.com/answers/104119/chmod?ucard=1, https://www.grepper.com/answers/475694/linux+permissions?ucard=1)
+
+head -numRows filename: first(last) numRows 
+cmd1 | cmd2: flow output of cmd1 to cmd2 (https://www.grepper.com/answers/132017/tail+unix?ucard=1)
+wx txtfile: num lines words characters
+
+grep: search plain text data using regex (https://www.grepper.com/answers/645433/grep?ucard=1)
+grep -c(count) -h(hover) -n(line number) -w(whole word) -o(only match) -After/Before/Complete x  (xth line)
+
+Look for sed/awk as need arises.
+sed "line_nums s/find/replace" file.ext (superset of grep)
+
+All of these commands can be combined together to generate a bash script, that can clean & sort data
+
+lolCats@reddit: SSH key

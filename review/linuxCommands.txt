@@ -24,4 +24,3 @@ sed "line_nums s/find/replace" file.ext (superset of grep)
 
 All of these commands can be combined together to generate a bash script, that can clean & sort data
 
-lolCats@reddit: SSH key

@@ -1,0 +1,15 @@
+{
+  "name": "learnbackend",
+  "version": "1.0.0",
+  "description": "learning backend with heavy focus on practical production ready code",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "backend",
+    "learn"
+  ],
+  "author": "Ashutosh Panigrahy",
+  "license": "ISC"
+}
